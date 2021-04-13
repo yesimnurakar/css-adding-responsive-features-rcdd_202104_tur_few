@@ -1,0 +1,65 @@
+@mixin for-smaller {
+  @media (max-width: 1108px) {
+  .wrapper { width: 90%; }
+  #social {
+    width: auto;
+    position: absolute;
+    top: 82px;
+    right: 4px;
+  }
+}
+
+
+@mixin for-tablets {
+  @media (max-width: 900px) {
+  body { font-size: 95%; }
+#logo h1 {
+    width: 35px;
+    height: 35px;
+
+  }
+  #logo h2 {
+    font-size: 2.2em;
+  }
+  #social {
+    top: 72px;
+  }
+  col-3 p {
+      column-count: 2;
+  }
+}
+
+@mixin for-750 {
+  @media (max-width: 750px) {
+  #navbar nav a { font-size: 0.9em; }
+#logo h1 {
+    width: 35px;
+    height: 35px;
+
+  }
+
+.col-1 {
+  width: 100%;
+  float: none;
+  margin-left: 0;
+  }
+  .col-2 {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    }
+    .col-3 {
+      width: 100%;
+      float: none;
+      margin-left: 0;
+      }
+  col-3 p {
+      column-count: 1;
+  }
+  .border-right {
+    border: 0;
+  }
+  #details div {
+    height: auto;
+  }
+}
